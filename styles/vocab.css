@@ -1,0 +1,145 @@
+:root {
+  --primary: #2563eb;
+  --dark: #0f172a;
+  --bg: #f8fafc;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  text-align: center;
+  max-width: 600px;
+  margin: 10px auto 40px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.cert-info p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+button, .btn-link {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: 0.2s;
+}
+
+.btn-download {
+  background: var(--dark);
+  color: white;
+  border: none;
+}
+
+.btn-link {
+  border: 2px solid #e2e8f0;
+  color: var(--dark);
+}
+
+.about {
+  margin-top: 60px;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about h2 {
+  font-size: 1.5rem;
+}
+
+.about p {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.socials a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.flex-text {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+}
