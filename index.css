@@ -132,10 +132,18 @@ footer {
   margin-top: 10px;
   font-size: 0.85rem;
   color: #64748b;
+
 }
 
 @media (max-width: 500px) {
   h1 {
     font-size: 1.9rem;
   }
+}
+
+.updated {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
 }
