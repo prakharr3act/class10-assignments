@@ -14,10 +14,3 @@ It helps me and my friends quickly find and view our work anytime.
 - Hindi
 - Social Science
 
-## Features
-- Simple subject-wise navigation
-- View and download assignments
-- Clean and responsive layout
-- Easy access for classmates
-
-## Structure
