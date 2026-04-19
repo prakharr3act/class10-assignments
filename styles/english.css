@@ -1,3 +1,70 @@
+:root {
+  --primary: #2563eb;
+  --dark: #0f172a;
+  --bg: #f8fafc;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  text-align: center;
+  max-width: 650px;
+  margin: 10px auto 45px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.cert-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.cert-info p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
 .chapter {
   display: flex;
   justify-content: space-between;
@@ -9,4 +76,78 @@
 
 .chapter:last-child {
   border-bottom: none;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-link {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  border: 2px solid #e2e8f0;
+  color: var(--dark);
+  transition: 0.2s;
+}
+
+.btn-link:hover {
+  background: #f1f5f9;
+}
+
+.about {
+  margin-top: 70px;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.about p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 70px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.socials a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.socials a:hover {
+  color: var(--primary);
+}
+
+.flex-text {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.9rem;
+  }
 }
