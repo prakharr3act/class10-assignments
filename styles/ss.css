@@ -1,0 +1,102 @@
+:root {
+  --primary: #2563eb;
+  --dark: #0f172a;
+  --bg: #f8fafc;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  text-align: center;
+  max-width: 650px;
+  margin: 10px auto 45px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.cert-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.cert-info p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.chapter {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+}
+
+.chapter:last-child {
+  border-bottom: none;
+}
+
+.btn-link {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.8rem;
+  border: 2px solid #e2e8f0;
+  color: var(--dark);
+  transition: 0.2s;
+}
+
+.btn-link:hover {
+  background: #f1f5f9;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
