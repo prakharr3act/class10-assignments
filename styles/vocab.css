@@ -84,6 +84,7 @@ button, .btn-link {
 .btn-download {
   background: var(--dark);
   color: white;
+  cursor: default;
   border: none;
 }
 
