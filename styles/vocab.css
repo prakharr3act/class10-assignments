@@ -1,8 +1,12 @@
+/* ============================================
+   WIKIPEDIA-STYLE SIMPLE PAGES
+   ============================================ */
+
 :root {
-  --primary: #2563eb;
-  --dark: #0f172a;
-  --bg: #f8fafc;
-  --card: #ffffff;
+  --bg: #ffffff;
+  --text: #000;
+  --text-secondary: #333;
+  --border: #000;
 }
 
 * {
@@ -12,135 +16,166 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   background: var(--bg);
-  color: var(--dark);
-  padding: 40px 20px;
+  color: var(--text);
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
   text-align: center;
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
 }
 
 .subtitle {
   text-align: center;
   max-width: 600px;
-  margin: 10px auto 40px;
-  color: #64748b;
-  font-size: 0.95rem;
+  margin: 0 auto 2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  display: none;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .card {
-  background: var(--card);
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
-  border: 1px solid #e2e8f0;
+  background: var(--bg);
+  border-radius: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  transition: all 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  border: 1px dotted var(--border);
+  background: var(--bg);
 }
 
 .cert-info h3 {
   font-size: 1.1rem;
-  margin-bottom: 5px;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
 }
 
 .cert-info p {
   font-size: 0.85rem;
-  color: #64748b;
-  margin-bottom: 15px;
+  color: var(--text-secondary);
+  margin: 0;
+  display: none;
 }
 
 .btn-group {
   display: flex;
-  gap: 10px;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 button, .btn-link {
-  flex: 1;
-  padding: 10px;
-  border-radius: 8px;
-  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0;
+  font-weight: 400;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  font-size: 0.85rem;
-  transition: 0.2s;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
 }
 
 .btn-download {
-  background: var(--dark);
+  background: var(--text);
   color: white;
+  border: 1px solid var(--text);
   cursor: default;
-  border: none;
 }
 
 .btn-link {
-  border: 2px solid #e2e8f0;
-  color: var(--dark);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn-link:hover {
+  background: var(--text);
+  color: white;
+  border-color: var(--text);
 }
 
 .about {
-  margin-top: 60px;
+  margin-top: 2rem;
   text-align: center;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
 }
 
 .about h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .about p {
-  color: #64748b;
-  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  display: none;
 }
 
 footer {
-  margin-top: 60px;
+  margin-top: 2rem;
   text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
 }
 
 .socials {
-  margin-top: 10px;
+  margin-top: 0.75rem;
 }
 
 .socials a {
-  margin: 0 10px;
+  margin: 0 0.75rem;
   text-decoration: none;
-  color: var(--dark);
-  font-weight: 600;
-  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 400;
+  font-size: 0.85rem;
+  padding-bottom: 2px;
+}
+
+.socials a:hover {
+  border-bottom: 1px dotted var(--text);
 }
 
 .flex-text {
-  margin-top: 10px;
-  font-size: 0.85rem;
-  color: #64748b;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
 }
 
 @media (max-width: 500px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .btn-group {
     flex-direction: column;
+  }
+
+  button, .btn-link {
+    width: 100%;
   }
 }
