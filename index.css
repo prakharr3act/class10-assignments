@@ -1,14 +1,12 @@
 /* ============================================
-   VERCEL-STYLE MINIMAL THEME
+   WIKIPEDIA-STYLE MINIMAL THEME
    ============================================ */
 
 :root {
   --bg: #ffffff;
-  --bg-secondary: #f5f5f5;
   --text: #000;
-  --text-secondary: #666;
-  --border: #e5e5e5;
-  --hover-bg: #f0f0f0;
+  --text-secondary: #333;
+  --border: #000;
 }
 
 * {
@@ -22,10 +20,13 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* ============================================
@@ -34,7 +35,7 @@ body {
 
 .navbar {
   border-bottom: 1px solid var(--border);
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -42,49 +43,45 @@ body {
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .nav-brand {
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  color: var(--text);
+  display: none;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .nav-link {
   color: var(--text);
   text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.2s;
+  font-size: 0.9rem;
   position: relative;
+  padding-bottom: 2px;
 }
 
 .nav-link:hover {
-  color: var(--text-secondary);
+  border-bottom: 1px dotted var(--text);
 }
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem;
+    padding: 0.75rem 0;
   }
   .nav-container {
-    flex-direction: column;
     gap: 1rem;
   }
   .nav-links {
-    gap: 1.5rem;
-    width: 100%;
-    justify-content: center;
+    gap: 1rem;
+  }
+  .nav-link {
+    font-size: 0.85rem;
   }
 }
 
@@ -93,8 +90,7 @@ body {
    ============================================ */
 
 .hero {
-  padding: 5rem 2rem;
-  text-align: center;
+  padding: 2rem 0;
   border-bottom: 1px solid var(--border);
 }
 
