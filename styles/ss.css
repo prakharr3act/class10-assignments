@@ -121,3 +121,10 @@ footer {
   font-size: 0.85rem;
   color: #64748b;
 }
+
+.footish {
+  margin-top: 70px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
